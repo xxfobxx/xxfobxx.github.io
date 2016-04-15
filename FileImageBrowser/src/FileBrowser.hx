@@ -30,13 +30,14 @@ class FileBrowser
 		
 		PrintHeader();
 		PrintJavascript(master);
-		PrintDirectories();
+		PrintHTML();
 		PrintImage();
 		PrintFooter();
 	}
-	public function PrintDirectories():Void
+	public function PrintHTML():Void
 	{
-		Lib.print("<br>");
+		Lib.print("<br>File Image Browser. Use <left> <right> or click image.<br>");
+		Lib.print("<br>Additional Directories: ");
 		Lib.print("<a href=\"index.php?q=1\">img1</a> ");
 		Lib.print("<a href=\"index.php?q=2\">img2</a> ");
 		Lib.print("<a href=\"index.php?q=3\">img3</a> ");

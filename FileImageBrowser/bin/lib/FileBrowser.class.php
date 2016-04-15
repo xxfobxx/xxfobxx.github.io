@@ -26,12 +26,13 @@ class FileBrowser {
 		}
 		$this->PrintHeader();
 		$this->PrintJavascript($master);
-		$this->PrintDirectories();
+		$this->PrintHTML();
 		$this->PrintImage();
 		$this->PrintFooter();
 	}}
-	public function PrintDirectories() {
-		php_Lib::hprint("<br>");
+	public function PrintHTML() {
+		php_Lib::hprint("<br>File Image Browser. Use <left> <right> or click image.<br>");
+		php_Lib::hprint("<br>Additional Directories: ");
 		php_Lib::hprint("<a href=\"index.php?q=1\">img1</a> ");
 		php_Lib::hprint("<a href=\"index.php?q=2\">img2</a> ");
 		php_Lib::hprint("<a href=\"index.php?q=3\">img3</a> ");
